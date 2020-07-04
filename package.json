@@ -1,0 +1,25 @@
+{
+	"name": "webpack-amd-demo",
+	"version": "1.0.0",
+	"description": "A simple webpack example with amd",
+	"main": "main.js",
+	"author": "liuyzhm",
+	"license": "MIT",
+	"scripts": {
+		"build": "webpack --config webpack.config.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Lucky-LYZ/webpack-amd-demo.git"
+	},
+	"keywords": [
+		"webpack",
+		"amd"
+	],
+	"dependencies": {
+		"webpack": "^4.43.0"
+	},
+	"devDependencies": {
+		"webpack-cli": "^3.3.12"
+	}
+}
