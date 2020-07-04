@@ -126,7 +126,7 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! ./secondScript */ \"./src/secondScript.js\")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (secondScript) {\n  console.log('Color from secondScript', secondScript.color);\n\n  return {\n    hello: function () {\n      let msg = 'Hello from firstScript';\n      console.log(msg);\n      document.write(msg);\n\n    }\n  }\n}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),\n\t\t\t\t__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));\n\n\n//# sourceURL=webpack:///./src/firstScript.js?");
+eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! ./secondScript */ \"./src/secondScript.js\")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (secondScript) {\r\n  console.log('Color from secondScript', secondScript.color);\r\n\r\n  return {\r\n    hello: function () {\r\n      let msg = 'Hello from firstScript';\r\n      console.log(msg);\r\n      document.write(msg);\r\n\r\n    }\r\n  }\r\n}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),\n\t\t\t\t__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));\r\n\n\n//# sourceURL=webpack:///./src/firstScript.js?");
 
 /***/ }),
 
@@ -137,7 +137,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPAC
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;\n/**\n * 通过 `npm inistall lodash --save` 安装lodash依赖后，便可在此处添加该依赖。  \n */\n!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! ./firstScript */ \"./src/firstScript.js\"), __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (firstScript, _) {\n  firstScript.hello();\n\n  let array = [1];\n  let other = _.concat(array, 2, [3], [[4]]);\n  document.write(`<br/>`);\n  document.write(`\\n lodash方法输出结果：${JSON.stringify(other)}`);\n  console.log(other);\n}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),\n\t\t\t\t__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));\n\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;\r\n/**\r\n * 通过 `npm inistall lodash --save` 安装lodash依赖后，便可在此处使用该依赖。  \r\n */\r\n!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! ./firstScript */ \"./src/firstScript.js\"), __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (firstScript, _) {\r\n  firstScript.hello();\r\n\r\n  const useLodash = () => {\r\n    let array = [1];\r\n    let other = _.concat(array, 2, [3], [[4]]);\r\n    document.write(`<br/>`);\r\n    document.write(`\\n lodash方法输出结果：${JSON.stringify(other)}`);\r\n  }\r\n\r\n  useLodash();\r\n}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),\n\t\t\t\t__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));\r\n\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ }),
 
@@ -148,7 +148,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;\n/**\n * 
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {\n  return {\n    color: 'green'\n  }\n}).call(exports, __webpack_require__, exports, module),\n\t\t\t\t__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));\n\n\n//# sourceURL=webpack:///./src/secondScript.js?");
+eval("var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {\r\n  return {\r\n    color: 'green'\r\n  }\r\n}).call(exports, __webpack_require__, exports, module),\n\t\t\t\t__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));\r\n\n\n//# sourceURL=webpack:///./src/secondScript.js?");
 
 /***/ })
 

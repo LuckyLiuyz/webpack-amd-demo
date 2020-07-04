@@ -5,8 +5,12 @@
 define(['./firstScript', 'lodash'], function (firstScript, _) {
   firstScript.hello();
 
-  let array = [1];
-  let other = _.concat(array, 2, [3], [[4]]);
-  document.write(`<br/>`);
-  document.write(`\n lodash方法输出结果：${JSON.stringify(other)}`);
+  const useLodash = () => {
+    let array = [1];
+    let other = _.concat(array, 2, [3], [[4]]);
+    document.write(`<br/>`);
+    document.write(`lodash方法输出结果：${JSON.stringify(other)}`);
+  }
+
+  useLodash();
 });
