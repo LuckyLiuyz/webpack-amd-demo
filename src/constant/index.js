@@ -3,6 +3,6 @@
  */
 define(function () {
     return {
-        GET_POSTS: 'https://my-json-server.typicode.com/Lucky-LYZ/demo/posts', // 获取posts
+        GET_POSTS: 'https://my-json-server.typicode.com/Lucky-LYZ/jsonServerDemo/posts', // 获取posts
     }
 });
