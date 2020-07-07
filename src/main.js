@@ -1,16 +1,12 @@
-
 /**
  * 通过 `npm inistall lodash --save` 安装lodash依赖后，便可在此处使用该依赖。  
  */
-define(['./firstScript', 'lodash'], function (firstScript, _) {
-  firstScript.hello();
-
-  const useLodash = () => {
-    let array = [1];
-    let other = _.concat(array, 2, [3], [[4]]);
-    document.write(`<br/>`);
-    document.write(`lodash方法输出结果：${JSON.stringify(other)}`);
-  }
-
-  useLodash();
+define(['./business/firstScript', './common/index'], function (firstScript, common) {
+    console.log('In main.js', {
+        firstScript,
+        common
+    });
+    firstScript.sayHello();
+    firstScript.posts();
+    common.useLodash();
 });
