@@ -13,5 +13,11 @@ define(function () {
             node.innerHTML = JSON.stringify(content);
             return node;
         },
+        /**
+         * @function 创建换行符
+         */
+        createBr: function () {
+            return document.createElement("br")
+        },
     }
 });

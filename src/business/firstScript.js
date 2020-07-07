@@ -10,8 +10,10 @@ define(['../service/index', '../common/index'], function (service, common) {
         sayHello: function () {
             let span = common.createElement('span', 'Hello, I am the business logic processing layer.');
             document.getElementById('app').append(span);
+            document.getElementById('app').append(common.createBr());
         },
         posts: async function () {
+            document.getElementById('app').append(common.createBr());
             let res = await service.getPosts();
 
             // ...拿着接口返回的数据，处理大量的业务逻辑.......
@@ -21,7 +23,6 @@ define(['../service/index', '../common/index'], function (service, common) {
         },
         useLodash: function () {
             let other = common.useLodash();
-            document.write(`<br/>`);
             document.write(`lodash方法输出结果：${JSON.stringify(other)}`);
         }
     }
