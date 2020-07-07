@@ -6,7 +6,8 @@ define(['./business/firstScript', './common/index'], function (firstScript, comm
         firstScript,
         common
     });
+
     firstScript.sayHello();
     firstScript.posts();
-    common.useLodash();
+    firstScript.useLodash();
 });

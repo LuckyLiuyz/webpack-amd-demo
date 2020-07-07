@@ -18,6 +18,11 @@ define(['../service/index', '../common/index'], function (service, common) {
 
             let span = common.createElement('span', JSON.stringify(res));
             document.getElementById('app').append(span);
+        },
+        useLodash: function () {
+            let other = common.useLodash();
+            document.write(`<br/>`);
+            document.write(`lodash方法输出结果：${JSON.stringify(other)}`);
         }
     }
 });
