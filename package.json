@@ -4,7 +4,8 @@
 	"description": "A simple webpack example with amd",
 	"main": "main.js",
 	"scripts": {
-		"build": "webpack --config webpack.config.js"
+		"build": "webpack --config webpack.config.js",
+		"start": "webpack-dev-server --config webpack.config.js"
 	},
 	"repository": {
 		"type": "git",
@@ -23,6 +24,7 @@
 		"webpack-cli": "^3.3.12"
 	},
 	"devDependencies": {
-		"clean-webpack-plugin": "^3.0.0"
+		"clean-webpack-plugin": "^3.0.0",
+		"webpack-dev-server": "^3.11.0"
 	}
 }
